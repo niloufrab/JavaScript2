@@ -14,6 +14,10 @@
 
 function hijackGoogleLogo() {
   // your code goes in here
+
+  const hpLogo = document.getElementById('hplogo');
+  hpLogo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+  hpLogo.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
 }
 
 hijackGoogleLogo();
