@@ -10,12 +10,16 @@ does not return anything but removes any duplicate elements from the array.
    
  */
 
-
 // WRITE YOUR FUNCTION HERE
 
-const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+function removeDuplicates(letters) {
+  const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
 
-removeDuplicates(letter);
+  const newLetters = letters.filter((item, index) => letters.indexOf(item) === index);
 
-if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
-  console.log("Hooray!")
+  if (newLetters === ['a', 'b', 'c', 'd', 'e', 'f']) {
+    console.log('Hooray!');
+  } else {
+    console.log('still need some work!');
+  }
+}

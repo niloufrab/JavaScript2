@@ -8,8 +8,6 @@ Write out your reasoning in 50 words or less.
 
 */
 
-
-
 let a = 10;
 const x = (function () {
   a = 12;
@@ -19,3 +17,5 @@ const x = (function () {
 })();
 
 x();
+// reference error because the value of a assign outside of the block.
+//let is not global scope and work as local scope.

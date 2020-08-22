@@ -18,7 +18,7 @@ f1(x);
 console.log(x);
 
 const y = {
-  x: 9
+  x: 9,
 };
 
 function f2(val) {
@@ -27,3 +27,9 @@ function f2(val) {
 }
 f2(y);
 console.log(y);
+
+// console.log(x) is equal to 9 because outside of function block the value of x is equal to 9 and logging the value of x not the value of f1(x).
+//console.log(f1(x)); is equal to 10
+
+//console.log(y) is equal to object={x:9} because logging the value of y not f2(y)
+//console.log(f2(y)); is equal to {x:10}
